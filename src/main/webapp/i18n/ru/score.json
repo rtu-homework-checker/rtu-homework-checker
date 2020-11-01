@@ -1,0 +1,27 @@
+{
+  "rtuHomeworkCheckerApp": {
+    "score": {
+      "home": {
+        "title": "Scores",
+        "createLabel": "Создать новый Score",
+        "createOrEditLabel": "Создать или отредактировать Score",
+        "notFound": "No Scores found"
+      },
+      "created": "Новый Score создан с идентификатором {{ param }}",
+      "updated": "Score обновлен с идентификатором {{ param }}",
+      "deleted": "Score удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Score {{ id }}?"
+      },
+      "detail": {
+        "title": "Score"
+      },
+      "ispassed": "Ispassed",
+      "createdat": "Createdat",
+      "modifiedat": "Modifiedat",
+      "deletedat": "Deletedat",
+      "file": "File",
+      "variant": "Variant"
+    }
+  }
+}

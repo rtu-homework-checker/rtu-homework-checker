@@ -14,7 +14,22 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101175923_added_entity_File.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180023_added_entity_Scenarioexpectedoutput.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180123_added_entity_Scenarioscore.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180223_added_entity_Score.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180323_added_entity_Student.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180423_added_entity_Task.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180623_added_entity_Variant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180723_added_entity_Varianttestscenario.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20201101175923_added_entity_constraints_File.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180023_added_entity_constraints_Scenarioexpectedoutput.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180123_added_entity_constraints_Scenarioscore.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180223_added_entity_constraints_Score.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180423_added_entity_constraints_Task.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180623_added_entity_constraints_Variant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201101180723_added_entity_constraints_Varianttestscenario.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,23 @@
+{
+  "rtuHomeworkCheckerApp": {
+    "varianttestscenario": {
+      "home": {
+        "title": "Varianttestscenarios",
+        "createLabel": "Create a new Varianttestscenario",
+        "createOrEditLabel": "Create or edit a Varianttestscenario",
+        "notFound": "No Varianttestscenarios found"
+      },
+      "created": "A new Varianttestscenario is created with identifier {{ param }}",
+      "updated": "A Varianttestscenario is updated with identifier {{ param }}",
+      "deleted": "A Varianttestscenario is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Varianttestscenario {{ id }}?"
+      },
+      "detail": {
+        "title": "Varianttestscenario"
+      },
+      "input": "Input",
+      "variant": "Variant"
+    }
+  }
+}

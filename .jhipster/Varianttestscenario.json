@@ -1,0 +1,32 @@
+{
+  "name": "Varianttestscenario",
+  "fields": [
+    {
+      "fieldName": "input",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "1024"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "variant",
+      "otherEntityRelationshipName": "varianttestscenario",
+      "relationshipValidateRules": "required",
+      "relationshipName": "variant",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201101180723",
+  "entityTableName": "varianttestscenario",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

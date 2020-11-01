@@ -1,0 +1,52 @@
+{
+  "name": "Score",
+  "fields": [
+    {
+      "fieldName": "ispassed",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdat",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "modifiedat",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "deletedat",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "file",
+      "otherEntityRelationshipName": "score",
+      "relationshipValidateRules": "required",
+      "relationshipName": "file",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "variant",
+      "otherEntityRelationshipName": "score",
+      "relationshipValidateRules": "required",
+      "relationshipName": "variant",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201101180223",
+  "entityTableName": "score",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

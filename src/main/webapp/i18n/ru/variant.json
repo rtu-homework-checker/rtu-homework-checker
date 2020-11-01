@@ -1,0 +1,26 @@
+{
+  "rtuHomeworkCheckerApp": {
+    "variant": {
+      "home": {
+        "title": "Variants",
+        "createLabel": "Создать новый Variant",
+        "createOrEditLabel": "Создать или отредактировать Variant",
+        "notFound": "No Variants found"
+      },
+      "created": "Новый Variant создан с идентификатором {{ param }}",
+      "updated": "Variant обновлен с идентификатором {{ param }}",
+      "deleted": "Variant удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Variant {{ id }}?"
+      },
+      "detail": {
+        "title": "Variant"
+      },
+      "title": "Title",
+      "modifiedat": "Modifiedat",
+      "deletedat": "Deletedat",
+      "createdat": "Createdat",
+      "task": "Task"
+    }
+  }
+}

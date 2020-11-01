@@ -1,0 +1,28 @@
+{
+  "rtuHomeworkCheckerApp": {
+    "file": {
+      "home": {
+        "title": "Files",
+        "createLabel": "Создать новый File",
+        "createOrEditLabel": "Создать или отредактировать File",
+        "notFound": "No Files found"
+      },
+      "created": "Новый File создан с идентификатором {{ param }}",
+      "updated": "File обновлен с идентификатором {{ param }}",
+      "deleted": "File удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить File {{ id }}?"
+      },
+      "detail": {
+        "title": "File"
+      },
+      "modifiedat": "Modifiedat",
+      "deletedat": "Deletedat",
+      "createdat": "Createdat",
+      "filename": "Filename",
+      "task": "Task",
+      "variant": "Variant",
+      "student": "Student"
+    }
+  }
+}

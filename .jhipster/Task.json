@@ -1,0 +1,49 @@
+{
+  "name": "Task",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "128"
+    },
+    {
+      "fieldName": "hasvariants",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "modifiedat",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "deletedat",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "createdat",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "task",
+      "relationshipValidateRules": "required",
+      "relationshipName": "user",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201101180423",
+  "entityTableName": "task",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

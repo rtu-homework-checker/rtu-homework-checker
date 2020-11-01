@@ -1,0 +1,61 @@
+{
+  "name": "File",
+  "fields": [
+    {
+      "fieldName": "modifiedat",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "deletedat",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "createdat",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "filename",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "128"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "task",
+      "otherEntityRelationshipName": "file",
+      "relationshipValidateRules": "required",
+      "relationshipName": "task",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "variant",
+      "otherEntityRelationshipName": "file",
+      "relationshipValidateRules": "required",
+      "relationshipName": "variant",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "student",
+      "otherEntityRelationshipName": "file",
+      "relationshipValidateRules": "required",
+      "relationshipName": "student",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201101175923",
+  "entityTableName": "file",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

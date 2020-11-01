@@ -1,0 +1,39 @@
+{
+  "name": "Scenarioscore",
+  "fields": [
+    {
+      "fieldName": "passed",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "score",
+      "otherEntityRelationshipName": "scenarioscore",
+      "relationshipValidateRules": "required",
+      "relationshipName": "score",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "scenarioexpectedoutput",
+      "otherEntityRelationshipName": "scenarioscore",
+      "relationshipValidateRules": "required",
+      "relationshipName": "scenarioexpectedoutput",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201101180123",
+  "entityTableName": "scenarioscore",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

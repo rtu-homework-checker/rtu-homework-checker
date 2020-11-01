@@ -1,0 +1,113 @@
+entity File {
+	modifiedat Instant,
+	deletedat Instant,
+	createdat Instant required,
+	filename String required maxlength(128)
+}
+
+entity Scenarioexpectedoutput {
+	outputline String required maxlength(1024)
+}
+
+entity Scenarioscore {
+	passed Boolean required
+}
+
+entity Score {
+	ispassed Boolean required,
+	createdat Instant required,
+	modifiedat Instant,
+	deletedat Instant
+}
+
+entity Student {
+	studentcode String required maxlength(10),
+	name String maxlength(64),
+	surname String maxlength(64)
+}
+
+entity Task {
+	title String required maxlength(128),
+	hasvariants Boolean required,
+	modifiedat Instant,
+	deletedat Instant,
+	createdat Instant
+}
+
+entity User {
+	username String required maxlength(64),
+	firstname String maxlength(64),
+	lastname String maxlength(64),
+	isadmin Boolean required,
+	/** Garums gan jau atkarīgs no hash ?‍ */
+	password String maxlength(256),
+	createdat Instant required,
+	modifiedat Instant
+}
+
+entity Variant {
+	title String maxlength(128),
+	modifiedat Instant,
+	deletedat Instant,
+	createdat Instant required
+}
+
+entity Varianttestscenario {
+	input String required maxlength(1024)
+}
+
+
+
+// Relations
+relationship ManyToOne {
+	File{task required} to Task
+}
+
+relationship ManyToOne {
+	File{variant required} to Variant
+}
+
+relationship ManyToOne {
+	File{student required} to Student
+}
+
+relationship ManyToOne {
+	Scenarioexpectedoutput{varianttestscenario} to Varianttestscenario
+}
+
+relationship ManyToOne {
+	Scenarioscore{score required} to Score
+}
+
+relationship ManyToOne {
+	Scenarioscore{scenarioexpectedoutput required} to Scenarioexpectedoutput
+}
+
+relationship ManyToOne {
+	Score{file required} to File
+}
+
+relationship ManyToOne {
+	Score{variant required} to Variant
+}
+
+relationship ManyToOne {
+	Task{user required} to User
+}
+
+relationship ManyToOne {
+	Variant{task required} to Task
+}
+
+relationship ManyToOne {
+	Varianttestscenario{variant required} to Variant
+}
+
+
+
+// Options
+service * with serviceClass
+paginate * with pagination
+dto * with mapstruct
+filter *
+

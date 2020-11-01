@@ -1,0 +1,31 @@
+{
+  "name": "Scenarioexpectedoutput",
+  "fields": [
+    {
+      "fieldName": "outputline",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "1024"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "varianttestscenario",
+      "otherEntityRelationshipName": "scenarioexpectedoutput",
+      "relationshipName": "varianttestscenario",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201101180023",
+  "entityTableName": "scenarioexpectedoutput",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

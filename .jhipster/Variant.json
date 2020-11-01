@@ -1,0 +1,45 @@
+{
+  "name": "Variant",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "128"
+    },
+    {
+      "fieldName": "modifiedat",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "deletedat",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "createdat",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "task",
+      "otherEntityRelationshipName": "variant",
+      "relationshipValidateRules": "required",
+      "relationshipName": "task",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201101180623",
+  "entityTableName": "variant",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

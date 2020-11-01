@@ -1,0 +1,23 @@
+{
+  "rtuHomeworkCheckerApp": {
+    "scenarioexpectedoutput": {
+      "home": {
+        "title": "Scenarioexpectedoutputs",
+        "createLabel": "Создать новый Scenarioexpectedoutput",
+        "createOrEditLabel": "Создать или отредактировать Scenarioexpectedoutput",
+        "notFound": "No Scenarioexpectedoutputs found"
+      },
+      "created": "Новый Scenarioexpectedoutput создан с идентификатором {{ param }}",
+      "updated": "Scenarioexpectedoutput обновлен с идентификатором {{ param }}",
+      "deleted": "Scenarioexpectedoutput удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Scenarioexpectedoutput {{ id }}?"
+      },
+      "detail": {
+        "title": "Scenarioexpectedoutput"
+      },
+      "outputline": "Outputline",
+      "varianttestscenario": "Varianttestscenario"
+    }
+  }
+}
